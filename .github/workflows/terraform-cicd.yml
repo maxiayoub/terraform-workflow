@@ -32,7 +32,7 @@ jobs:
     name: build_production
     needs: build_development
     runs-on: ubuntu-latest
-    environment: Development
+    environment: Production
     env:
       TF_VAR_aws_region: ${{ vars.AWS_REGION }}
     steps:
